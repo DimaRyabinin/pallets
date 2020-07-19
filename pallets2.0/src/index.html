@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>KEY SOFT</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Информация о палете.</h1>
+  </header>
+
+  <main class="main">
+    <section class="main__section section">
+      <div class="wrapper">
+        <aside class="section__aside aside">
+          <button class="aside__button">Проверить палет</button>
+          <label for="file" class="aside__button aside__button_file">Загрузить файл</label>
+          <p class="aside__load-state">Файл не загружен.</p>
+          <input id="file" type="file" accept="json">
+        </aside>
+
+        <article class="section__article article hide">
+          <div class="article__code-wrap"></div>
+          <p class="article__quantity"></p>
+          <div class="wrapper-list">
+            <p class="article__list-name">Список коробок:</p>
+            <ul class="aticle__list list"></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
